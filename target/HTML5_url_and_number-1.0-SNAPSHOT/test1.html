@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：HTML5_url_and_number
+  File name(文件名): test1
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/4/1
+  Time(创建时间)： 21:59
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body {
+            background-color: #c1faff;
+            font-size:24px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        fieldset {
+            width: 400px;
+        }
+        input{
+            height: 24px;
+        }
+
+        input[type=submit] {
+            /*margin: 200px;*/
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, -0%);
+            /*font-size: 24px;*/
+        }
+
+        div.p{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    </style>
+</head>
+<body>
+<div class="p">
+    <div>
+        <form method="post" action="result.jsp">
+            <fieldset>
+                <legend>信息</legend>
+                <table border="1">
+                    <tr>
+                        <td>
+                            url：
+                        </td>
+                        <td>
+                            <label>
+                                <input type="url" name="url">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            数字：
+                        </td>
+                        <td>
+                            <label>
+                                <input type="number" max="1000" min="500" step="5" name="number">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" name="提交">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+</div>
+</body>
+</html>
